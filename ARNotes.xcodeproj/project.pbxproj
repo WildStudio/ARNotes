@@ -14,6 +14,7 @@
 		384BDD402099EA4C0035ED72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 384BDD3F2099EA4C0035ED72 /* Assets.xcassets */; };
 		384BDD432099EA4C0035ED72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384BDD412099EA4C0035ED72 /* LaunchScreen.storyboard */; };
 		384BDD4E2099EA4C0035ED72 /* ARNotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384BDD4D2099EA4C0035ED72 /* ARNotesTests.swift */; };
+		384BDD5A2099F4910035ED72 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384BDD592099F4910035ED72 /* StatusViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		384BDD492099EA4C0035ED72 /* ARNotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARNotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		384BDD4D2099EA4C0035ED72 /* ARNotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARNotesTests.swift; sourceTree = "<group>"; };
 		384BDD4F2099EA4C0035ED72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		384BDD592099F4910035ED72 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +81,9 @@
 		384BDD352099EA460035ED72 /* ARNotes */ = {
 			isa = PBXGroup;
 			children = (
+				384BDD582099F43D0035ED72 /* Controllers */,
 				384BDD362099EA460035ED72 /* AppDelegate.swift */,
 				384BDD382099EA460035ED72 /* art.scnassets */,
-				384BDD3A2099EA460035ED72 /* ViewController.swift */,
 				384BDD3C2099EA460035ED72 /* Main.storyboard */,
 				384BDD3F2099EA4C0035ED72 /* Assets.xcassets */,
 				384BDD412099EA4C0035ED72 /* LaunchScreen.storyboard */,
@@ -97,6 +99,15 @@
 				384BDD4F2099EA4C0035ED72 /* Info.plist */,
 			);
 			path = ARNotesTests;
+			sourceTree = "<group>";
+		};
+		384BDD582099F43D0035ED72 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				384BDD3A2099EA460035ED72 /* ViewController.swift */,
+				384BDD592099F4910035ED72 /* StatusViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				384BDD3B2099EA460035ED72 /* ViewController.swift in Sources */,
+				384BDD5A2099F4910035ED72 /* StatusViewController.swift in Sources */,
 				384BDD372099EA460035ED72 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
