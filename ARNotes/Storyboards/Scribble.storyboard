@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scribble View Controller-->
+        <scene sceneID="0Bk-Qa-3QV">
+            <objects>
+                <viewController storyboardIdentifier="ScribbleViewController" id="UuD-8u-hS8" customClass="ScribbleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wLS-dN-4V1"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Ic-Tl-GKZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KQ1-Ce-2fe">
+                        <rect key="frame" x="0.0" y="0.0" width="295" height="192"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pEv-sL-TOu" userLabel="MainImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="295" height="192"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BG1-b6-aw6" userLabel="TempImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="295" height="192"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4My-kF-2RB" userLabel="Reset">
+                                <rect key="frame" x="251" y="0.0" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="7Cm-sM-JD3"/>
+                                    <constraint firstAttribute="width" constant="44" id="NdP-jZ-mg2"/>
+                                </constraints>
+                                <state key="normal" image="Icon16_Restart">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset:" destination="UuD-8u-hS8" eventType="touchUpInside" id="jQw-Dl-41M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pEv-sL-TOu" firstAttribute="top" secondItem="KQ1-Ce-2fe" secondAttribute="top" id="2L9-el-hzE"/>
+                            <constraint firstAttribute="trailing" secondItem="4My-kF-2RB" secondAttribute="trailing" id="3ek-i8-44e"/>
+                            <constraint firstAttribute="trailing" secondItem="pEv-sL-TOu" secondAttribute="trailing" id="5IT-dT-Xp0"/>
+                            <constraint firstItem="BG1-b6-aw6" firstAttribute="top" secondItem="pEv-sL-TOu" secondAttribute="top" id="SH0-g5-Ocx"/>
+                            <constraint firstItem="BG1-b6-aw6" firstAttribute="centerX" secondItem="pEv-sL-TOu" secondAttribute="centerX" id="aiR-1R-fOF"/>
+                            <constraint firstItem="BG1-b6-aw6" firstAttribute="width" secondItem="pEv-sL-TOu" secondAttribute="width" id="fRv-eF-MU4"/>
+                            <constraint firstItem="pEv-sL-TOu" firstAttribute="leading" secondItem="KQ1-Ce-2fe" secondAttribute="leading" id="jw6-Kt-8fI"/>
+                            <constraint firstItem="BG1-b6-aw6" firstAttribute="centerY" secondItem="pEv-sL-TOu" secondAttribute="centerY" id="oED-lf-zxD"/>
+                            <constraint firstItem="4My-kF-2RB" firstAttribute="top" secondItem="wLS-dN-4V1" secondAttribute="bottom" id="qN6-X8-brw"/>
+                            <constraint firstItem="BG1-b6-aw6" firstAttribute="height" secondItem="pEv-sL-TOu" secondAttribute="height" id="v1a-de-pGD"/>
+                            <constraint firstItem="1Ic-Tl-GKZ" firstAttribute="top" secondItem="pEv-sL-TOu" secondAttribute="bottom" id="z6w-e0-2Jq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="r6r-k2-7Yd"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="295" height="192"/>
+                    <connections>
+                        <outlet property="mainImageView" destination="pEv-sL-TOu" id="asx-Z4-ovz"/>
+                        <outlet property="tempImageView" destination="BG1-b6-aw6" id="FLD-LL-vbY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MWD-oQ-iTx" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="479"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon16_Restart" width="16" height="16"/>
+    </resources>
+</document>
